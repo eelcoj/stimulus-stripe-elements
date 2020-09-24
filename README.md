@@ -59,7 +59,7 @@ Next, include the stripe.js script on your pages.
 
 ```
 ### ERB
-```rails
+```erb
 <%= form_with(
   url: billing_url,
   local: true,
