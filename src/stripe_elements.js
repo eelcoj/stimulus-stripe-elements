@@ -36,7 +36,7 @@ export default class extends Controller {
 
     this.stripe.createToken(this.card).then((result) => {
       if (result.error) {
-        this.errorsTarget.textContent = error.message
+        this.errorsTarget.textContent = result.error.message
       } else {
         this.stripeTokenHandler(result.token)
       }
